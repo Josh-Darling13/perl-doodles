@@ -1,2 +1,2 @@
 # perl-doodles
-Basic Perl programs incase you're wondering, does anyone still code in Perl?
+There is a reason for Perl on listmaker. I enjoy coding in it.
