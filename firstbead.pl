@@ -34,9 +34,9 @@ $odd_string =~ tr/b/#/;                                         # I just wanted 
 $even_string =~ tr/w/_/;                                        # operator.
 $even_string =~ tr/b/#/;
 
-for my $in (@the_board){
-    my $line_is = $in %2 != 0? $even_string : $odd_string;
-    print $line_is."\n";
+for my $in (@the_board){                                        # shorter way to do this... but I'm trying to "use" perl
+    my $line_is = $in %2 != 0? $even_string : $odd_string;      # see other version of this (shortboard.pl) that doesn't have an array
+    print $line_is."\n";                                        # called @the_board
 }
 
 #for a "fun obervation" check out the file "shortboard.pl"

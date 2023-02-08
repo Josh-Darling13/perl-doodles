@@ -4,7 +4,6 @@ use warnings;
 use 5.010;
 
 my $number = 1;
-my @the_board = (1..8);
 my @even_line = ();
 my @odd_line = ();
 
@@ -19,7 +18,7 @@ $number++;
 my $odd_string = join '', @odd_line;
 my $even_string = join '',  @even_line;
 
-for my $in (@the_board){
+for (my $in = 0; $in < 9; $in++) {
     my $line_is = $in %2 != 0? $even_string : $odd_string;
     print $line_is."\n";
 }
@@ -30,6 +29,6 @@ for my $in (@the_board){
 # if (l %2) {lineIs = goHere ? outString : hashTag;}
 #
 # for javescript that's "compact" the total lines of that compacted javascript program is 29 lines not inculding comments
-# for bewtter readablity it really should be 35 and I didn't comment that code.
+# for bewtter readablity it really should be 35 --uncommented.
 #
-# the same program in perl also "uncommented" and using arrays... 25 lines.
+# the same program in perl also "uncommented" and using arrays... 24 lines.
